@@ -24,7 +24,7 @@ function addNewlineSeparatedNumbers () {
 	expect(add("1\n2,3")).toBe(6);
 }
 function addNumbersWithDifferentDelimiter () {
-	
+	expect(add("//;\n1;2;3")).toBe(6);
 }
 
 function addSpec () {
@@ -33,6 +33,7 @@ function addSpec () {
 	it(" will return the sum of the numbers for two comma separated numbers", addTwoNumbers);
 	it(" will return the sum of an arbitrarily long string of comma separated numbers", addArbitraryCountOfNumbers);
 	it(" will return the sum of a string of comma or newline separated numbers", addNewlineSeparatedNumbers);
+	it(" will return the sum of a string of numbers separated by an arbitrary delimiter", addNumbersWithDifferentDelimiter);
 }
 
 describe("add", addSpec);
