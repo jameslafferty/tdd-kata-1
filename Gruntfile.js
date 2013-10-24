@@ -7,7 +7,7 @@
 				tddKata1 : {
 					src : 'index.js',
 					options : {
-						specs : 'specs/*.js'
+						specs : 'spec/javascripts/*.js'
 					}
 				}
 			},
